@@ -9,7 +9,7 @@ import ShowForm from '../pages/Forms/ShowForm'
 import ShowList from '../pages/ShowList/ShowList'
 import Header from '../components/Header/Header'
 import ShowDetails from '../pages/ShowDetails/ShowDetails'
-import Remove from '../pages/RemoveShow/RemoveShow'
+// import Remove from '../pages/RemoveShow/RemoveShow'
 import ProtectedRoute from '../components/ProtectedRoute/ProtectedRoute'
 
 // Services
@@ -17,12 +17,17 @@ import * as authService from '../services/authService'
 import * as showService from '../services/shows'
 
 // Image Assets
-// import img from '../assets/ .svg'
+import Seats from '../assets/seats.jpg'
+import Lights from '../assets/lights.jpg'
 
 function App() {
   const navigate = useNavigate()
   const [shows, setShows] = useState([])
   const [user, setUser] = useState(authService.getUser())
+
+  const showImages = [
+    Seats, Lights,
+  ]
 
   const addShow = async (showData) => {
     const show = await showService.create(showData)
@@ -78,7 +83,7 @@ function App() {
             element={
             <ProtectedRoute user={user}>
               <ShowList shows={shows} 
-              // showImages={showImages} 
+              showImages={showImages} 
               />
             </ProtectedRoute>} 
             />

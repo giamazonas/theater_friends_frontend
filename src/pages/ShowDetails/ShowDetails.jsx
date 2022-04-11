@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import './ShowDetails.css'
 import EditShow from './components/EditShow'
 import { getOne } from '../../services/shows'
-import RemoveShow from '../RemoveShow/RemoveShow'
+import { Link } from 'react-router-dom'
 
 const ShowDetails = ({ showImages, user }) => {
   const { id } = useParams()
@@ -33,7 +33,7 @@ const ShowDetails = ({ showImages, user }) => {
             <p>{show.time}</p>
             <p>{show.cast}</p>
             <p>{show.info}</p>
-            <p>{show.ticket_url}</p>
+            <Link >{show.ticket_url}</Link>
             <EditShow show={show}
             user={user} />
         </div>
