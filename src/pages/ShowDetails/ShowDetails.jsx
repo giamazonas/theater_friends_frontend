@@ -2,15 +2,21 @@ import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import './ShowDetails.css'
 import EditShow from './components/EditShow'
+import { getOne } from '../../services/shows'
 
 const ShowDetails = ({ showImages, user }) => {
   const { id } = useParams()
   const [show, setShow] = useState(null)
 
-  useEffect(() => {}, [id])
+  useEffect(() => {
+    const fetchOne = async () => {
+      const data = await getOne(id)
+      setShow(data.show)
+    }
+    fetchOne()
+  }, [id])
 
   if (!show) return <h1>Loading</h1>
-
   return (
     <>
       <section className="container">
