@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom'
 import '../../styles/Form.css'
 
 // Services
-
+import { getOne } from '../../services/shows'
 
 // Components
 import ShowInput from './ShowInput'
@@ -25,7 +25,25 @@ const ShowForm = (props) => {
     setForm({ ...form, [e.target.name]: e.target.value })
   }
 
-  useEffect(() => {}, [id])
+  useEffect(() => {
+    const fetchOne = async () => {
+      const data = await getOne(id)
+      setForm({
+        id: data.show.id,
+        title: data.show.title,
+        theater: data.show.theater,
+        city: data.show.city,
+        start_date: data.show.start_date,
+        end_date: data.show.end_date,
+        time: data.show.time,
+        cast: data.show.cast,
+        info: data.show.info,
+        ticket_url: data.show.url,
+      })
+    }
+    id && fetchOne()
+    return () => setForm({})
+  }, [id])
 
   return (
     <>

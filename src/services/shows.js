@@ -36,3 +36,18 @@ export const getOne = async (id) => {
   }
 }
 
+export const update = async (show) => {
+  try {
+    const res = await fetch(`${BASE_URL}${show.id}`, {
+      method: 'PUT',
+      headers: {
+        'content-type': 'application/json',
+        'Authorization': `Bearer ${tokenService.getToken()}`
+      },
+      body: JSON.stringify(show)
+    })
+    return await res.json()
+  } catch (error) {
+    throw error
+  }
+}

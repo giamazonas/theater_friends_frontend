@@ -29,7 +29,13 @@ function App() {
     SVGMetadataElement([...shows, show])
   }
 
-  const updateShow = async (showData) => {}
+  const updateShow = async (showData) => {
+    const updatedShow = await showService.update(showData)
+    setShows(shows.map((show) => (
+      show.id === updatedShow.id ? updatedShow : show
+    )))
+  }
+
   const deleteShow = async (id) => {}
 
   const handleLogout = () => {
