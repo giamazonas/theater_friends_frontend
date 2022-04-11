@@ -36,7 +36,10 @@ function App() {
     )))
   }
 
-  const deleteShow = async (id) => {}
+  const deleteShow = async (id) => {
+    await showService.deleteOne(id)
+    setShows(shows.filter(show => show.id !== parseInt(id)))
+  }
 
   const handleLogout = () => {
     authService.logout()
@@ -98,18 +101,19 @@ function App() {
             <ProtectedRoute user={user}>
               <ShowForm shows={shows} 
               updateShow={updateShow} 
-              user={user} 
-              />
-            </ProtectedRoute>
-          } />
-          <Route path="/shows/:id/remove" element={
-            <ProtectedRoute user={user}>
-              <Remove 
               deleteShow={deleteShow} 
               user={user} 
               />
             </ProtectedRoute>
           } />
+          {/* <Route path="/shows/:id/remove" element={
+            <ProtectedRoute user={user}>
+              <Remove 
+              deleteShow={deleteShow} 
+              user={user} 
+              />
+            </ProtectedRoute> */}
+          {/* } /> */}
         </Routes>
       </main>
     </>

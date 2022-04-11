@@ -1,8 +1,16 @@
-import userEvent from "@testing-library/user-event";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
+
+// Image Assets
+// import Photo from ''
 
 const EditShow = ({show, user}) => {
+  const { id } = useParams()
   const navigate = useNavigate()
+
+  const handleDelete = () => {
+    show.deleteShow && show.deleteShow(id)
+    navigate(`/shows`)
+  }
 
   return ( 
     show.profile_id === user.id && 
@@ -11,9 +19,12 @@ const EditShow = ({show, user}) => {
       onClick={() => navigate(`/shows/${show.id}/edit`, { state: show})}
       >Edit Show</button>
 
-      <button className="btn danger"
-      onClick={() => navigate(`/shows/${show.id}/removeShow`, { state: show })}>Delete Show </button>
-
+      <button 
+      className="btn danger"
+      onClick={handleDelete}
+      type="button">
+        Delete Show
+      </button>
     </div>
 );
 }

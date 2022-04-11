@@ -7,7 +7,7 @@ const ShowList = ({ shows, showImages }) => {
   return (
     <>
       <section className="page-header">
-        <h1>Show List</h1>
+        <h1></h1>
       </section>
       <section className="card-container">
         {shows.map((show) => (

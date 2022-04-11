@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import './ShowDetails.css'
 import EditShow from './components/EditShow'
 import { getOne } from '../../services/shows'
+import RemoveShow from '../RemoveShow/RemoveShow'
 
 const ShowDetails = ({ showImages, user }) => {
   const { id } = useParams()
