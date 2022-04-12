@@ -60,8 +60,10 @@ export const deleteOne = async (id) => {
   try {
     const res = await fetch(`${BASE_URL}${id}`, {
       method: "DELETE",
-      headers: { Authorization: `Bearer ${tokenService.getToken()}` },
-    });
+      headers: { 
+        "content-type": "application/json",
+        Authorization: `Bearer ${tokenService.getToken()}` },
+    });console.log(id)
     return await res.json();
   } catch (error) {
     throw error;

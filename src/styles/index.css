@@ -40,15 +40,27 @@ html {
 
   header {
     width: 100%;
+    background-color: red;
+    /* background: scroll; */
     background: var(--nav-bg-ff);
     border-bottom: var(--borders);
-    background-color: rgb(209, 207, 207);
+    /* background-color: rgb(209, 207, 207); */
+
+  } 
+
+  .navigation-bar{
+    background-color: white;
+    padding: 10px;
+    width:100%;
+    justify-content: right;
+    
   }
 
   nav {
     margin: 10px;
     background-color: rgb(251, 248, 248);
     border-radius: 5px;
+    background-color: blue;
   }
 
   ul {
@@ -103,6 +115,7 @@ html {
     display: flex;
     padding: 8px 0px;
     align-items: center;
+  
   }
 
   .btn {

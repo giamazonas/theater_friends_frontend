@@ -11,8 +11,9 @@ const Remove = (props) => {
   const handleDelete = () => {
     props.deleteShow && props.deleteShow(id)
     navigate(`/shows`)
+    console.log('delete rs page', props, id)
   }
-
+  console.log('REMOVE PG', props.id)
   return (
     <>
       <div className="page-header">
@@ -28,7 +29,7 @@ const Remove = (props) => {
         <button 
         onClick={handleDelete} 
         type="button" 
-        className="btn danger">
+        className="btn">
           Delete</button>
       </section>
     </>

@@ -21,7 +21,7 @@ function App() {
   const navigate = useNavigate()
   const [shows, setShows] = useState([])
   const [user, setUser] = useState(authService.getUser())
-  // const [profile, setProfile] = useState(authService.getUser())
+
 
   const addShow = async (showData) => {
     const show = await showService.create(showData)
@@ -106,16 +106,16 @@ function App() {
           <Route path="/shows/myshows" element={
             <ProtectedRoute user={user}>
               <MyShows shows={shows} 
-                // profile={profile}
                 user={user} 
               />
             </ProtectedRoute>
           } />
-          <Route path="/shows/:id/remove" element={
+          <Route path="/shows/:id/removeshow" element={
             <ProtectedRoute user={user}>
               <Remove 
               deleteShow={deleteShow} 
-              user={user} 
+              user={user}
+              shows={shows}
               />
             </ProtectedRoute>
           } />
