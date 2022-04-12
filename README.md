@@ -96,11 +96,12 @@ ___________________
 ### CREDITS 🎫
 ______________________________
 
-
+Photo by Mark Thompson on Unsplash<br>
+<img src="https://i.imgur.com/J4l2ze9.jpg" alt="Photo by Mark Thompson on Unsplash" width="150" />
 <br>
 <br>
 
-[Favicon]<br>
+Favicon<br>
 <img src="https://i.imgur.com/NaU6Di4.jpg" alt="my favicon" width="100" />
 <br><br>
 

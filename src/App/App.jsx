@@ -16,22 +16,15 @@ import ProtectedRoute from '../components/ProtectedRoute/ProtectedRoute'
 import * as authService from '../services/authService'
 import * as showService from '../services/shows'
 
-// Image Assets
-import Seats from '../assets/seats.jpg'
-import Lights from '../assets/lights.jpg'
-
 function App() {
   const navigate = useNavigate()
   const [shows, setShows] = useState([])
   const [user, setUser] = useState(authService.getUser())
-
-  const showImages = [
-    Seats, Lights,
-  ]
+  // const [profile, setProfile] = useState(authService.getUser())
 
   const addShow = async (showData) => {
     const show = await showService.create(showData)
-    SVGMetadataElement([...shows, show])
+    setShows([...shows, show])
   }
 
   const updateShow = async (showData) => {
@@ -83,7 +76,6 @@ function App() {
             element={
             <ProtectedRoute user={user}>
               <ShowList shows={shows} 
-              showImages={showImages} 
               />
             </ProtectedRoute>} 
             />
@@ -91,7 +83,6 @@ function App() {
             <ProtectedRoute user={user}>
               <ShowDetails 
               user={user} 
-              // images={images} 
               />
             </ProtectedRoute>
           } />

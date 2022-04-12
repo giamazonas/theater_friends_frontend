@@ -4,7 +4,8 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  
+  margin: 10px;
+
 }
 
 .img {
@@ -27,7 +28,6 @@
   opacity: 0.8;
   border-radius: 4px;
   margin-right: 10px;
-  /* border: 1px solid rgb(200, 200, 200); */
 }
 
 .show-details h1 {

@@ -1,11 +1,11 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Profiler } from 'react'
 import { useParams } from 'react-router-dom'
 import './ShowDetails.css'
 import EditShow from './components/EditShow'
 import { getOne } from '../../services/shows'
 import { Link } from 'react-router-dom'
 
-const ShowDetails = ({ showImages, user }) => {
+const ShowDetails = ({ showImages, user, profile }) => {
   const { id } = useParams()
   const [show, setShow] = useState(null)
 
@@ -25,7 +25,8 @@ const ShowDetails = ({ showImages, user }) => {
           {/* <img className="" src={Images[idx]} alt={`${show.show_title}`} /> */}
         {/* </div> */}
         <div className="show-details">
-          <h1>{show.title}</h1>
+          <h2>{show.title}</h2>
+            <br />
             <p>{show.theater}</p>
             <p>{show.city}</p>
             <p>{show.start_date}</p>
@@ -33,7 +34,10 @@ const ShowDetails = ({ showImages, user }) => {
             <p>{show.time}</p>
             <p>{show.cast}</p>
             <p>{show.info}</p>
-            <Link >{show.ticket_url}</Link>
+            <br />
+            {/* <p>posted by: {profile.name}</p> */}
+            <br />
+            {/* <Link >{show.ticket_url}</Link> */}
             <EditShow show={show}
             user={user} />
         </div>

@@ -28,6 +28,7 @@
 .card-content {
   width: 100%;
   padding: 12px;
+  /* adjust cards photo here??   */
 }
 
 .card h2 {
@@ -38,14 +39,6 @@
 .card p {
   margin: 5px 0;
   font-size: var(--font-reg);
-}
-
-.card-img-container {
-  width: 100%;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .usr-img {
