@@ -19,11 +19,12 @@ const ShowDetails = ({ showImages, user, profile }) => {
 
   if (!show) return <h1>Loading</h1>
   return (
-    <>
+    <>  
+      <div>
+      <img className="showview" src="https://i.imgur.com/CsygsNR.jpg"  ></img>
+      </div>
       <section className="container">
-        {/* <div className=""> */}
-          {/* <img className="" src={Images[idx]} alt={`${show.show_title}`} /> */}
-        {/* </div> */}
+      
         <div className="show-details">
           <h2>{show.title}</h2>
             <br />

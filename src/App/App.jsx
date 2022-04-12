@@ -9,7 +9,8 @@ import ShowForm from '../pages/Forms/ShowForm'
 import ShowList from '../pages/ShowList/ShowList'
 import Header from '../components/Header/Header'
 import ShowDetails from '../pages/ShowDetails/ShowDetails'
-// import Remove from '../pages/RemoveShow/RemoveShow'
+import MyShows from '../pages/MyShows/MyShows'
+import Remove from '../pages/RemoveShow/RemoveShow'
 import ProtectedRoute from '../components/ProtectedRoute/ProtectedRoute'
 
 // Services
@@ -102,14 +103,22 @@ function App() {
               />
             </ProtectedRoute>
           } />
-          {/* <Route path="/shows/:id/remove" element={
+          <Route path="/shows/myshows" element={
+            <ProtectedRoute user={user}>
+              <MyShows shows={shows} 
+                // profile={profile}
+                user={user} 
+              />
+            </ProtectedRoute>
+          } />
+          <Route path="/shows/:id/remove" element={
             <ProtectedRoute user={user}>
               <Remove 
               deleteShow={deleteShow} 
               user={user} 
               />
-            </ProtectedRoute> */}
-          {/* } /> */}
+            </ProtectedRoute>
+          } />
         </Routes>
       </main>
     </>

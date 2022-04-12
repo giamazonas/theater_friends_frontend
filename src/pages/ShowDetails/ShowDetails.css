@@ -6,10 +6,15 @@
   justify-content: center;
   margin: 10px;
 }
-/* 
-.img {
-  width: 75%;
-  max-width: 350px;
+
+.showview {
+  width: 100%;
+  background-position: center center;
+  -ms-background-position-x: center;
+  -ms-background-position-y: center;
+  background-size: cover;  
+  /* width: 75%;
+  max-width: 350px; */
 }
 
 .usr-img {
