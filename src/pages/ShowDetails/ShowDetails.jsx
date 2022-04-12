@@ -1,4 +1,4 @@
-import { useState, useEffect, Profiler } from 'react'
+import { useState, useEffect, Profile } from 'react'
 import { useParams } from 'react-router-dom'
 import './ShowDetails.css'
 import EditShow from './components/EditShow'
@@ -21,24 +21,27 @@ const ShowDetails = ({ showImages, user, profile }) => {
   return (
     <>  
       <div>
-      <img className="showview" src="https://i.imgur.com/CsygsNR.jpg"  ></img>
+      <img className="showview" src="https://i.imgur.com/CsygsNR.jpg" alt="Photoby Felix Mooneeram on Unsplash"  ></img>
       </div>
       <section className="container">
       
         <div className="show-details">
           <h2>{show.title}</h2>
             <br />
-            <p>{show.theater}</p>
-            <p>{show.city}</p>
-            <p>{show.start_date}</p>
-            <p>{show.end_date}</p>
+            <h3> {show.theater},  {show.city}</h3>
+            <p>Starts:  {show.start_date}</p>
+            <p>Last Show:  {show.end_date}</p>
             <p>{show.time}</p>
+            <h3>Cast: </h3>
             <p>{show.cast}</p>
-            <p>{show.info}</p>
+            <h3>Exta information: </h3>
+              <p>{show.info}</p>
             <br />
             {/* <p>posted by: {profile.name}</p> */}
             <br />
             {/* <Link >{show.ticket_url}</Link> */}
+            <a href="`${show.ticket_url}`"></a>
+
             <EditShow show={show}
             user={user} />
         </div>

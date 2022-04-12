@@ -1,12 +1,22 @@
 import '../ShowList/ShowList.css'
 
 // Components
-// import ShowCard from '../../components/ShowCard/ShowCard'
+import ShowCard from '../../components/ShowCard/ShowCard'
 
-const MyShows = (props) => {
+const MyShows = ({shows, showImages }) => {
   return ( 
     <>
       <div className="myshows">
+
+      <section className="card-container">
+        {shows.map((show) => (
+          <ShowCard
+            show={show}
+            key={show.id}
+            // showImages={showImages}
+          />
+        ))}
+      </section>
       {/* {shows.map((show) => (
         if (show.profile_id === profile.id) {
             <section className="card-container">

@@ -17,6 +17,10 @@ export const create = async (show) => {
     throw error;
   }
 };
+// sort by date - ascending
+// need to access by last two index of string, to sort
+// order by show.date( acces digits ) acsending
+
 
 export const getAll = async () => {
   try {
