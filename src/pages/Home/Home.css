@@ -6,20 +6,12 @@
   justify-content: center;
 }
 
-.logo-container {
-  display: flex;
-  padding: 10px 8px;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin: 5px 0px 10px 0px;
-}
 
 .home-container > section {
   width: 100%;
 }
 
-.home-container .logo-container {
+.home-container {
   max-width: 375px;
   display: none;
 }
@@ -112,10 +104,3 @@
     display: flex;
   }
 }
-/*  box 
-disply as flex
-flex direaction row
-
-flexgrow 1
-flexshrink 1
-flexbasis 0 */

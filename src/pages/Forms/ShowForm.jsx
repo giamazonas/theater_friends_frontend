@@ -46,11 +46,11 @@ const ShowForm = (props) => {
   }, [id])
 
   return (
-    <>
+    <><br />
       <div className="page-header">
         {id
           ? <h1>Edit Show</h1>
-          : <><h1>Add Show</h1></>
+          : <><h2>Add a Show</h2></>
         }
       </div>
 
@@ -60,6 +60,9 @@ const ShowForm = (props) => {
           <button type="submit" className="btn submit">Submit!</button>
         </form>
       </section>
+      <br />
+      <br />
+      <br />
     </>
   )
 }
