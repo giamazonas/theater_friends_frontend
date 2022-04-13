@@ -106,6 +106,11 @@ Photo by Felix Mooneeram on Unsplash <br>
 <br>
 <br>
 
+Photo by Rob Laughter <br>
+<img src="https://i.imgur.com/Ta6DJut.jpg" alt="Photo by Rob Laughter on Unsplash" ></img>
+<br>
+<br>
+
 Favicon<br>
 <img src="https://i.imgur.com/NaU6Di4.jpg" alt="my favicon" width="100" />
 <br><br>

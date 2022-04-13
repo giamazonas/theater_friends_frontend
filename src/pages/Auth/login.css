@@ -1,0 +1,7 @@
+.curtain {
+width: 100%;
+  background-position: center center;
+  -ms-background-position-x: center;
+  -ms-background-position-y: center;
+  background-size: cover; 
+}

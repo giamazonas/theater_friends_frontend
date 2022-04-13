@@ -1,3 +1,4 @@
+import './login.css'
 import '../../styles/Form.css'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
@@ -37,7 +38,8 @@ const Signup = ({ setUser }) => {
   }
 
   return (
-    <>
+    <div id="curtain">
+      <img className="curtain" src="https://i.imgur.com/Ta6DJut.jpg" alt="Photoby Rob Laughter on Unsplash" ></img>
       <div className="page-header">
         <h1>Sign Up</h1>
         {/* <img src={ } alt="" /> */}
@@ -72,7 +74,7 @@ const Signup = ({ setUser }) => {
           <button type="submit" className="btn submit">Signup</button>
         </form>
       </section>
-    </>
+    </div>
   )
 }
 
