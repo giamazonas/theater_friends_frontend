@@ -26,7 +26,7 @@ And one man in his time plays many parts."
 ## EXPLORE HERE  🎭
 ___________________
 
-Click here, to peruse my web app, [Theater_Friends](/https:// .netlify.app)
+Click here, to peruse my web app, [Theater_Friends](/https://theater-friends.netlify.app/login)
 
 <br>
 <br>

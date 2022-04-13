@@ -41,11 +41,8 @@ html {
   header {
     width: 100%;
     background-color: red;
-    /* background: scroll; */
     background: var(--nav-bg-ff);
     border-bottom: var(--borders);
-    /* background-color: rgb(209, 207, 207); */
-
   } 
 
   .navigation-bar{
@@ -53,7 +50,6 @@ html {
     padding: 10px;
     width:100%;
     justify-content: right;
-    
   }
 
   nav {
@@ -71,13 +67,6 @@ html {
 
   main {
     width: 100vw;
-  }
-
-  .card-content {
-    /* background-image: url(../assets/paul-green-crop.jpg); */
-    /* color: white; */
-    /* --text-color: white; */
-    
   }
 
   h2 {
@@ -137,8 +126,6 @@ html {
   }
 
   .submit {
-    /* color: var(--submit);
-    border-color: var(--submit); */
     color: black;
     border-color: rgb(155, 153, 153);
   }
@@ -147,10 +134,6 @@ html {
     font-size: var(--font-xxl);
     margin: 0;
   }
-
-  /* .confirmation {
-    padding-left: 20px;
-  } */
 
   @media only screen and (min-width: 768px) {
     header {
@@ -181,7 +164,6 @@ html {
     @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
       header {
         background: var(--nav-bg);
-        /* backdrop-filter: solid white; */
         backdrop-filter: blur(3px);
         -webkit-backdrop-filter: blur(3px);
       }
@@ -208,7 +190,6 @@ html {
 
     @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
       header {
-        /* backdrop-filter: solid white; */
         backdrop-filter: none;
         -webkit-backdrop-filter: none;
       }
