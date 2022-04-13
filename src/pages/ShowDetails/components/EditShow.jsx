@@ -7,10 +7,10 @@ const EditShow = ({show, user, deleteShow}) => {
   const { id } = useParams()
   const navigate = useNavigate()
 
-  const handleDelete = () => {
-    show.deleteShow(id)
-    navigate(`/shows`)
-  }
+  // const handleDelete = () => {
+  //   show.deleteShow(id)
+  //   navigate(`/shows`)
+  // }
 
   return ( 
     show.profile_id === user.id && 
