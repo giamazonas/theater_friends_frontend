@@ -1,16 +1,10 @@
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 // Image Assets
 // import Photo from ''
 
 const EditShow = ({show, user, deleteShow}) => {
-  const { id } = useParams()
   const navigate = useNavigate()
-
-  // const handleDelete = () => {
-  //   show.deleteShow(id)
-  //   navigate(`/shows`)
-  // }
 
   return ( 
     show.profile_id === user.id && 
