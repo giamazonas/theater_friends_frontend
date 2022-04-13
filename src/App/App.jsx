@@ -105,7 +105,8 @@ function App() {
           } />
           <Route path="/shows/myshows" element={
             <ProtectedRoute user={user}>
-              <MyShows shows={shows} 
+              <MyShows 
+                shows={shows} 
                 user={user} 
               />
             </ProtectedRoute>

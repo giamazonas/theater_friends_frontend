@@ -19,13 +19,13 @@ const ShowInput = ({ form, handleChange }) => {
       <label htmlFor="start_date">Start Date:</label>
       <input
         value={form.start_date ? form.start_date : ''} onChange={handleChange} id="start_date"
-        required name="start_date" type="text" placeholder="start date" autoComplete="off"
+        required name="start_date" type="text" placeholder="start date: Mon 00, 0000" autoComplete="off"
       />
 
       <label htmlFor="end_date">Last Date:</label>
       <input
         value={form.end_date ? form.end_date : ''} onChange={handleChange} id="end_date"
-        required name="end_date" type="text" placeholder="end date" autoComplete="off"
+        required name="end_date" type="text" placeholder="end date: Mon 00, 0000" autoComplete="off"
       />
       <label htmlFor="time">Show starts:</label>
       <input

@@ -1,7 +1,5 @@
 import { useNavigate } from "react-router-dom";
 
-// Image Assets
-// import Photo from ''
 
 const EditShow = ({show, user, deleteShow}) => {
   const navigate = useNavigate()
@@ -16,7 +14,6 @@ const EditShow = ({show, user, deleteShow}) => {
       <button 
       className="btn"
       onClick={() => navigate(`/shows/${show.id}/removeshow`, { state: show})}
-      // type="button"
       > Delete Show
       </button>
     </div>
