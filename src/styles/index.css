@@ -56,7 +56,7 @@ html {
     margin: 10px;
     background-color: rgb(251, 248, 248);
     border-radius: 5px;
-    background-color: blue;
+    /* background-color: blue; */
   }
 
   ul {

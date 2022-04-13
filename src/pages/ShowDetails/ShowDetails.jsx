@@ -1,13 +1,12 @@
 import { useState, useEffect } from 'react'
-import { useParams,useNavigate } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import './ShowDetails.css'
 import EditShow from './components/EditShow'
 import { getOne } from '../../services/shows'
 
-const ShowDetails = ({ showImages, user, profile }) => {
+const ShowDetails = ({ user, profile }) => {
   const { id } = useParams()
   const [show, setShow] = useState(null)
-  const navigate = useNavigate()
 
   useEffect(() => {
     const fetchOne = async () => {
@@ -38,8 +37,9 @@ const ShowDetails = ({ showImages, user, profile }) => {
               <p>{show.info}</p>
             <br />
             <br />
-            <p>Purchase tickets here: </p>
-            <button className='btn' onClick={() => navigate(`${show.ticket_url}`) }>{show.ticket_url}</button><br /> <br /><br />
+            <p>Purchase tickets here: </p><br /> <br />
+              <a className='btn' href={`${show.ticket_url}`}> {show.ticket_url} </a>
+              <br /> <br /> <br />
             <EditShow show={show}
             user={user} /><br/>
         </div>
