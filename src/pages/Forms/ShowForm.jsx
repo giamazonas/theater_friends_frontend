@@ -2,13 +2,9 @@ import { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import '../../styles/Form.css'
 
-// Services
 import { getOne } from '../../services/shows'
 
-// Components
 import ShowInput from './ShowInput'
-
-// Image Assets
 
 const ShowForm = (props) => {
   const { id } = useParams()

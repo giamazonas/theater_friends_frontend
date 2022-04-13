@@ -32,8 +32,7 @@
   padding: 25px 25px 30px 25px;
   box-shadow: var(--card-box-shadow);
   border-radius: var(--card-border-radius);
-  background-color: white;
-
+  background-color: rgb(249, 249, 249);
 }
 
 .form-container input {

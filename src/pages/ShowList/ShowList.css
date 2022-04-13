@@ -22,13 +22,12 @@
   color: var(--text-color);
   box-shadow: var(--card-box-shadow);
   background: rgb(255,255,255);
-  background: linear-gradient(145deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 44%, rgb(250, 251, 252) 100%);
+  background: linear-gradient(145deg, rgb(207, 206, 206) 0%, rgba(255,255,255,1) 44%, rgb(250, 251, 252) 100%);
 }
 
 .card-content {
   width: 100%;
   padding: 12px;
-  /* adjust cards photo here??   */
 }
 
 .card h2 {

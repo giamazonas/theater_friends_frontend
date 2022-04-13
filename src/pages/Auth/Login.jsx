@@ -4,9 +4,6 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { login, getUser } from '../../services/authService'
 
-// Image Assets
-// import img from '../../assets/  .svg'
-
 const Login = ({ setUser }) => {
   const navigate = useNavigate()
   const [form, setForm] = useState({
@@ -40,7 +37,6 @@ const Login = ({ setUser }) => {
       <img className="curtain" src="https://i.imgur.com/Ta6DJut.jpg" alt="Photoby Rob Laughter on Unsplash" ></img>
       <div className="page-header" >
         <h1>Login</h1>
-        {/* <img src={} alt="" /> */}
       </div>
 
       {form.error &&
