@@ -1,3 +1,5 @@
+/* @media (prefers-color-scheme: light) { */
+
 .container {
   display: flex;
   padding: 40px 30px;
@@ -87,3 +89,5 @@ div.show-details {
     margin-right: 25px;
   }
 }
+
+/* } */

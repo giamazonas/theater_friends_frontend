@@ -1,12 +1,7 @@
 import './Home.css'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-
 import { login, getUser } from '../../services/authService'
-
-// import LogoType from '../../assets/logotype.svg'
-// import Splash from '../../assets/splash.svg'
-
 
 const Home = ({ user, setUser }) => {
   const navigate = useNavigate()
@@ -28,31 +23,14 @@ const Home = ({ user, setUser }) => {
   }
 
   return (
-    <div className="home-container">
-      <section className="" >
-        <div className="container">
-          {/* <img src={} alt="" /> */}
-        </div>
+    <div>
+      <img className="curtain" src="https://i.imgur.com/Ta6DJut.jpg" alt="Photoby Rob Laughter on Unsplash" ></img>
+        <h1 className="quote">"All the world’s a stage,
+        And all the men and women merely players;
+        They have their exits and their entrances,
+        And one man in his time plays many parts."    <p></p>
+        ~William Shakespeare</h1>
 
-      </section >
-      {!user &&
-        <section className="login-container">
-          <form onSubmit={handleSubmit} className="login">
-            <h1>Login</h1>
-            <label>Email:</label>
-            <input
-              value={form.email} onChange={handleChange}
-              name="email" type="email" autoComplete="off"
-            />
-            <label>Password:</label>
-            <input
-              value={form.password} onChange={handleChange}
-              name="password" type="password" autoComplete="off"
-            />
-            <button type="submit" className="btn submit">Login</button>
-          </form>
-        </section>
-      }
     </div>
   )
 }

@@ -1,7 +1,5 @@
 import { useEffect, useState } from 'react'
 import { Route, Routes, useNavigate } from 'react-router-dom'
-
-// Components
 import Home from '../pages/Home/Home'
 import Login from '../pages/Auth/Login'
 import Signup from '../pages/Auth/Signup'
@@ -12,8 +10,6 @@ import ShowDetails from '../pages/ShowDetails/ShowDetails'
 import MyShows from '../pages/MyShows/MyShows'
 import Remove from '../pages/RemoveShow/RemoveShow'
 import ProtectedRoute from '../components/ProtectedRoute/ProtectedRoute'
-
-// Services
 import * as authService from '../services/authService'
 import * as showService from '../services/shows'
 
@@ -21,7 +17,6 @@ function App() {
   const navigate = useNavigate()
   const [shows, setShows] = useState([])
   const [user, setUser] = useState(authService.getUser())
-
 
   const addShow = async (showData) => {
     const show = await showService.create(showData)
@@ -43,7 +38,7 @@ function App() {
   const handleLogout = () => {
     authService.logout()
     setUser(null)
-    navigate('/')
+    navigate('/login')
   }
 
   useEffect(() => {

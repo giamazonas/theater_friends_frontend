@@ -1,3 +1,5 @@
+/* @media (prefers-color-scheme: light) { */
+
 .stageview {
   width: 100%;
   background-position: center center;
@@ -23,6 +25,10 @@
   box-shadow: var(--card-box-shadow);
   background: rgb(255,255,255);
   background: linear-gradient(145deg, rgb(207, 206, 206) 0%, rgba(255,255,255,1) 44%, rgb(250, 251, 252) 100%);
+}
+
+.card-content:hover {
+  background-color: whitesmoke;
 }
 
 .card-content {
@@ -68,3 +74,4 @@
     width: 280px;
   }
 }
+/* } */

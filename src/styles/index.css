@@ -1,3 +1,5 @@
+/* @media (prefers-color-scheme: light) { */
+
 html {
   box-sizing: border-box
 }
@@ -16,7 +18,7 @@ html {
 #root {
   width: 100vw;
 }
-/* @media (prefers-color-scheme: light) { */
+
 
   body {
     margin: 0;
@@ -40,23 +42,21 @@ html {
 
   header {
     width: 100%;
-    background-color: red;
-    background: var(--nav-bg-ff);
-    border-bottom: var(--borders);
+    background-color: white;
   } 
 
-  .navigation-bar{
+  .navigation-bar {
     background-color: white;
+    width: 100%;
     padding: 10px;
-    width:100%;
     justify-content: right;
+    border-radius: 1;
   }
 
   nav {
     margin: 10px;
     background-color: rgb(251, 248, 248);
     border-radius: 5px;
-    /* background-color: blue; */
   }
 
   ul {
@@ -104,7 +104,6 @@ html {
     display: flex;
     padding: 8px 0px;
     align-items: center;
-  
   }
 
   .btn {

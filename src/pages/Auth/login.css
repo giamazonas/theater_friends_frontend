@@ -1,3 +1,5 @@
+/* @media (prefers-color-scheme: light) { */
+
 .curtain {
 width: 100%;
   background-position: center center;
@@ -5,3 +7,5 @@ width: 100%;
   -ms-background-position-y: center;
   background-size: cover; 
 }
+
+/* } */

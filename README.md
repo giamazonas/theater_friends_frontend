@@ -14,11 +14,7 @@
 <br>
 "From the start it has been the theatre's business to entertain people ... it needs no other passport than fun." -Bertolt Brecht
 <br><br>
-"All the world’s a stage,
-And all the men and women merely players;
-They have their exits and their entrances,
-And one man in his time plays many parts."
-~William Shakespeare
+
 <br>
 <br>
 <br>
@@ -26,7 +22,7 @@ And one man in his time plays many parts."
 ## EXPLORE HERE  🎭
 ___________________
 
-Click here, to peruse my web app, [Theater_Friends](/https://theater-friends.netlify.app/login)
+Click here, to peruse my web app, [Theater_Friends](/https://theater-friends.netlify.app)
 
 <br>
 <br>

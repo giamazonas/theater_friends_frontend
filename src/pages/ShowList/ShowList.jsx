@@ -8,7 +8,7 @@ import ShowCard from '../../components/ShowCard/ShowCard'
 
 const ShowList = ({ shows, showImages }) => {
 
-  // console.log('HELLO1', props.shows.id)
+  console.log('HELLO1', shows)
   // console.log('NOPE', props.shows.profile_id)
   // console.log(props.user.id)
 
@@ -16,6 +16,19 @@ const ShowList = ({ shows, showImages }) => {
 // need to access by last two index of string, to sort
 // order by show.date( acces digits ) acsending
   // if ({props.shows.id} === {props.user.id})
+
+  // let findOwner = props.shows.filter(show => {
+  //   return show.profile_id === props.user.id
+  // })
+  let sortByDate = shows.filter(show => {
+    let year = show.start_date.slice(-2)
+    // if (show > show) {
+    //   return
+    // }
+    //shows . map by yeardis
+    
+  
+  })
 
   return (
     <> 
