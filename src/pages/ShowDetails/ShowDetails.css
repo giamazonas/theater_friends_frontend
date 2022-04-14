@@ -17,8 +17,6 @@
   -ms-background-position-x: center;
   -ms-background-position-y: center;
   background-size: cover;  
-  /* width: 75%;
-  max-width: 350px; */
 }
 
 .usr-img {
@@ -28,7 +26,6 @@
 
 div.show-details {
   width: 98%;
-  /* background-color: red; */
   border-radius: 20px;
   padding: 30px;
   box-shadow: 5px 5px 6px -1px #AAA;

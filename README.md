@@ -19,7 +19,7 @@ As an actress and someone with many friends in the theater world, I have regrett
 ## EXPLORE HERE  🎭
 ___________________
 
-Click here, to peruse my web app, [Theater_Friends](https://theater-friends.netlify.app)
+Click here, to peruse my web app, [Theater_Friends](https://theater-friends.netlify.app/login)
 
 <br>
 <br>
@@ -65,6 +65,7 @@ ________________
 ___________________
 <br>
 
+- sorted automatically by start date
 - search bar on main page
 - light and dark mode
 - MAILCHECK API (only real emails can log in)
@@ -91,7 +92,7 @@ Photo by Felix Mooneeram on Unsplash <br>
 <br>
 
 Photo by Rob Laughter on Unsplash <br>
-<img src="https://i.imgur.com/Ta6DJut.jpg" alt="Photo by Rob Laughter on Unsplash" ></img>
+<img src="https://i.imgur.com/Ta6DJut.jpg" alt="Photo by Rob Laughter on Unsplash" width="150" ></img>
 <br>
 <br>
 

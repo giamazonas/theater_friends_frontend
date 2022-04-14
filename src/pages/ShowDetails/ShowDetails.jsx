@@ -22,8 +22,7 @@ const ShowDetails = ({ user, profile }) => {
       <div>
       <img className="showview" src="https://i.imgur.com/CsygsNR.jpg" alt="Photoby Felix Mooneeram on Unsplash"  ></img>
       </div>
-      <section className="container">
-      
+      <section className="container">    
         <div className="show-details">
           <h2>{show.title}</h2>
             <br />

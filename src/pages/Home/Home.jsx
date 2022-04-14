@@ -10,7 +10,6 @@ const Home = () => {
         They have their exits and their entrances,
         And one man in his time plays many parts."    <p></p>
         ~William Shakespeare</h1>
-
     </div>
   )
 }

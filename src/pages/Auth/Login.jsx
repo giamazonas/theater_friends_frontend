@@ -38,11 +38,9 @@ const Login = ({ setUser }) => {
       <div className="page-header" >
         <h1>Login</h1>
       </div>
-
       {form.error &&
         <h3 className="red-text">{form.error}</h3>
       }
-
       <section className="form-container">
         <form onSubmit={handleSubmit}>
           <label>Email:</label>

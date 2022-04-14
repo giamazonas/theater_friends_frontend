@@ -10,7 +10,6 @@ const EditShow = ({show, user, deleteShow}) => {
       <button className="btn" 
       onClick={() => navigate(`/shows/${show.id}/edit`, { state: show})}
       >Edit Show</button>
-
       <button 
       className="btn"
       onClick={() => navigate(`/shows/${show.id}/removeshow`, { state: show})}

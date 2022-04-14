@@ -6,7 +6,6 @@ const ShowCard = ({ show, showImages }) => {
     <Link to={`/shows/${show.id}`} className="card">
       <div className="card-content">
         <div className="card-img-container">
-  
         </div>
         <h2 className="card-title">{show.title}</h2>
         <p>{show.theater}</p>

@@ -40,11 +40,9 @@ const Signup = ({ setUser }) => {
       <div className="page-header">
         <h1>Sign Up</h1>
       </div>
-
       {form.error &&
         <h3 className="red-text">{form.error}</h3>
       }
-
       <section className="form-container">
         <form onSubmit={handleSubmit}>
           <label>Name:</label>

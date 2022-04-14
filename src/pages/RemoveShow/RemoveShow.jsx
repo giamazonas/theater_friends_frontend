@@ -1,8 +1,5 @@
 import { useNavigate, useLocation, useParams, Link } from 'react-router-dom'
 
-// Image Assets
-// import Photo from ''
-
 const Remove = (props) => {
   const { id } = useParams()
   const { state } = useLocation()
@@ -11,14 +8,12 @@ const Remove = (props) => {
   const handleDelete = () => {
     props.deleteShow && props.deleteShow(id)
     navigate(`/shows`)
-    console.log('delete rs page', props, id)
   }
-  console.log('REMOVE PG', props.id)
+
   return (
     <>
       <div className="page-header">
         <h2>Delete Show from Shows List</h2>
-        {/* <img src={IMG} alt="" /> */}
       </div>
       <section className="remove">
         <h2>Are you sure you want to delete {state?.title}?</h2>
@@ -29,7 +24,7 @@ const Remove = (props) => {
         <button 
         onClick={handleDelete} 
         type="button" 
-        className="btn">
+        className="btn" id="deleteShow">
           Delete</button>
       </section>
     </>

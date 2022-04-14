@@ -1,9 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import '../../styles/Form.css'
-
 import { getOne } from '../../services/shows'
-
 import ShowInput from './ShowInput'
 
 const ShowForm = (props) => {
@@ -49,7 +47,6 @@ const ShowForm = (props) => {
           : <><h2>Add a Show</h2></>
         }
       </div>
-
       <section className="form-container">
         <form onSubmit={handleSubmit}>
           <ShowInput form={form} handleChange={handleChange} />
