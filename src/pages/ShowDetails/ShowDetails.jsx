@@ -37,7 +37,7 @@ const ShowDetails = ({ user, profile }) => {
             <br />
             <br />
             <p>Purchase tickets here: </p><br /> <br />
-              <a className='btn' href={`${show.ticket_url}`}> {show.ticket_url} </a>
+              <a className='btn' href={`${show.ticket_url}`}> Ticket Link </a>
               <br /> <br /> <br />
             <EditShow show={show}
             user={user} /><br/>
