@@ -4,18 +4,15 @@
 <br>
 <br>
 
-> The word theatre comes from the Greeks. It means the seeing place. It is the place people come to see the truth about life and the social situation. The theatre is a spiritual and social X-ray of its time. The theatre was created to tell people the truth about life and the social situation. ~Stella Adler 
+> "I think the theatre is as essential to civilization as safe, pure water." -Vanessa Redgrave 
 
 <br>
+My concept for this app was to provide a place where actors, and friends of actors, could provide (and access) information on their upcoming shows, without other distractions or missed connections. One post, and everyone will have all the latest show information at their fingertips, so the actor can then focus on what they need to focus on: preparing for their upcoming productions. 
 
-"You should feel a flow of joy because you are alive. Your body will feel full of life. That is what you must give from the stage. Your life. No less. That is art: to give all you have." - Anton Chekhov<br><br>
-"I think the theatre is as essential to civilization as safe, pure water." -Vanessa Redgrave
 <br>
 <br>
-"From the start it has been the theatre's business to entertain people ... it needs no other passport than fun." -Bertolt Brecht
+As an actress and someone with many friends in the theater world, I have regretted missing friends' shows, and it happens more frequently than I like. Having somewhere I can keep up with who has an upcoming show seems like a dream come true. No facebook notifications or feed to distract me from event information, and even if they forgot to let everyone know, a quick pop-in on this app means I've got all the info I need to support my community.  
 <br><br>
-
-<br>
 <br>
 <br>
 
@@ -30,24 +27,18 @@ Click here, to peruse my web app, [Theater_Friends](/https://theater-friends.net
 ### SCREENSHOTS 📸
 ___________
 <br>
-Log in page
+Log in page, mobile <br>
 
-
-<img src ="https://imgur.com/ .png" alt="welcome page" width="400"/>
+<img src ="https://i.imgur.com/Ayq71H4.jpg" alt="welcome page" width="400"/>
 <br>
 <br>
 
-shows page
+shows page, mobile <br>
 
-
-
-<img src ="https://" alt="shows" width="400"/>
+<img src ="https://i.imgur.com/cl8rgQM.jpg" alt="shows" width="400"/>
 <br>
 <br>
 
-Trello Board/Planning: [Trello](https://trello.com/b/areQ48Dy/theaterfriends)
-<br>
-<br>
 
 ### TECH USED 👯
 ________________
@@ -56,7 +47,6 @@ ________________
 <br>
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white">
-<img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white">
  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
@@ -66,12 +56,7 @@ ________________
  <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white">
  <img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white">
  <img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white">
- 
- maybe: <img src="	https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white">
 
- <br>
-
- 
 
 <br>
 <br>
@@ -80,6 +65,8 @@ ________________
 ___________________
 <br>
 
+- search bar on main page
+- light and dark mode
 - MAILCHECK API (only real emails can log in)
 - "attending" checkbox functionality
 - "save to my profile" checkbox & functionality
@@ -92,6 +79,7 @@ ___________________
 ### CREDITS 🎫
 ______________________________
 
+<br>
 Photo by Mark Thompson on Unsplash<br>
 <img src="https://i.imgur.com/J4l2ze9.jpg" alt="Photo by Mark Thompson on Unsplash" width="150" />
 <br>
@@ -102,7 +90,7 @@ Photo by Felix Mooneeram on Unsplash <br>
 <br>
 <br>
 
-Photo by Rob Laughter <br>
+Photo by Rob Laughter on Unsplash <br>
 <img src="https://i.imgur.com/Ta6DJut.jpg" alt="Photo by Rob Laughter on Unsplash" ></img>
 <br>
 <br>

@@ -1,26 +1,6 @@
 import './Home.css'
-import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
-import { login, getUser } from '../../services/authService'
 
-const Home = ({ user, setUser }) => {
-  const navigate = useNavigate()
-  const [form, setForm] = useState({
-    email: '',
-    password: ''
-  })
-
-  const handleSubmit = async (e) => {
-    e.preventDefault()
-    await login(form)
-    const currentUser = getUser()
-    setUser(currentUser)
-    navigate('/shows')
-  }
-
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value })
-  }
+const Home = () => {
 
   return (
     <div>
