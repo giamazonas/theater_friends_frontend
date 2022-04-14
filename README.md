@@ -19,7 +19,7 @@ As an actress and someone with many friends in the theater world, I have regrett
 ## EXPLORE HERE  🎭
 ___________________
 
-Click here, to peruse my web app, [Theater_Friends](/https://theater-friends.netlify.app)
+Click here, to peruse my web app, [Theater_Friends](https://theater-friends.netlify.app)
 
 <br>
 <br>
